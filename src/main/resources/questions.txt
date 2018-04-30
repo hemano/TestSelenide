@@ -1,0 +1,400 @@
+Which do you like better, Star Wars or Star Trek?
+What is your favorite comedy?
+What is your favorite flavor of ice cream?
+Have you ever cut your own hair?
+Can you play an instrument?
+Are you religious?
+Do you have any siblings?
+Do you keep your things organized?
+What is your favorite TV show?
+What is your favorite eye color?
+Have you ever had to run for your life?
+Which do you like better, long hair or short hair?
+Have you ever ridden a motorcycle?
+What is your favorite season?
+Have you ever changed a diaper?
+Have you ever been to a Renaissance fair?
+What is your first memory?
+Have you ever been to a zoo?
+Which do you like better, sweet or salty?
+What is your favorite video game?
+Have you ever been arrested?
+Which do you like better, chocolate or vanilla?
+Have you ever had bad sun burn?
+Have you ever been a vegetarian?
+What do you fear?
+Have you ever dyed your hair?
+What are your favorite movies?
+Have you ever ran in a race?
+Have you ever shot a gun?
+Which do you like better, pancakes or waffles?
+If you won the lottery, what would you buy?
+Have you ever been stopped by the police?
+What is your least favorite chore?
+Have you ever been on TV?
+What do you do to make money?
+Where have you traveled?
+Have you ever seen a ghost?
+What is your favorite holiday?
+Have you ever been in a play?
+What was your worst injury?
+Do you like to dance?
+Have you ever hitchhiked?
+What is your favorite breakfast meal?
+Where are you originally from?
+What is the longest you've been awake?
+Who do you most resemble?
+If you could change genders for a day, would you?
+Have you ever been in a fight?
+Have you ever slept outside?
+Have you ever mowed a lawn?
+which do you like better, calls or texts?
+What are your favorite albums?
+Have you ever been to Asia?
+Have you ever ironed clothes?
+Have you ever shoplifted?
+Do you have nice handwriting?
+What is your favorite school subject?
+Have you ever gotten stitches?
+What was your major in school?
+What are your favorite hot dog toppings?
+Which do you like better, pens or pencils?
+What is your favorite clothing brand?
+What is the worst movie you've seen?
+If you had to become an animal, what would you choose?
+Have you ever been electrocuted?
+What is your size shoe?
+Which do you like better, curtains or blinds?
+What are your favorite songs?
+Have you ever been to Comic-con?
+What is your favorite color?
+Which do you like better, hot or cold?
+Which do you like better, shower or bath?
+What is your favorite lunch meal?
+What is your favorite candy?
+If you had to eat just one thing for the rest of your life, what would you choose?
+Do you have a temper?
+Have you ever been tanning?
+Are you friends with more men or women?
+Do you have family in another country?
+What are your favorite books?
+Have you ever bungee jumped?
+Have you ever been in a talent show?
+What is your favorite fruit?
+which do you like better, being a passenger or driver?
+Have you ever been scuba diving?
+What is your favorite drink?
+Have you ever been to a football game?
+Have you ever been to a planetarium?
+When is your birthday?
+Which do you like better, book or eBook?
+Do you have any pet peeves?
+If you had to swap lives with a character, who would you choose?
+Which do you like better, black socks or white socks?
+Do you have pets?
+What is your favorite cereal?
+How many pairs of shoes do you own?
+Have you ever changed a tire?
+Do you have any allergies?
+If you didn't need sleep, what would you do?
+Have you ever been to a farm?
+Where did you get your name?
+Do you have family in another country?
+Which do you like better, pens or pencils?
+What is your favorite memory?
+Have you ever been to Comic-con?
+Where is the furthest you've driven?
+Which do you like better, coffee or tea?
+Which do you like better, rain or snow?
+Have you ever ran in a race?
+How many books did you read last year?
+Do you have pets?
+Have you ever been to a Renaissance fair?
+What is your favorite fast food meal?
+What is your least favorite chore?
+Which do you like better, Star Wars or Star Trek?
+Have you ever mowed a lawn?
+Have you ever been scuba diving?
+If you had to become an animal, what would you choose?
+Have you ever been to a zoo?
+What are your favorite songs?
+What do you do to make money?
+What is your favorite school subject?
+What type of music are you into?
+Have you ever been done karaoke?
+What do you fear?
+Have you ever been hunting?
+Who do you most resemble?
+Do you swear often?
+Where have you traveled?
+Do you have any pet peeves?
+Do you have any siblings?
+What is your favorite color to wear?
+Can you play an instrument?
+Which do you like better, cars or trucks?
+If you could become invisible, what would you do?
+What is your favorite sport?
+What are your favorite albums?
+What is the worst movie you've seen?
+Have you ever been surfing?
+Which do you like better, long hair or short hair?
+Where do you see yourself in ten years?
+What are your favorite hot dog toppings?
+Where are you originally from?
+Have you ever had to run for your life?
+Have you ever been on TV?
+Which do you like better, Microsoft or Apple?
+Who is your favorite character?
+If you had to eat just one thing for the rest of your life, what would you choose?
+Do you like bugs?
+What is your favorite breakfast meal?
+How many pairs of shoes do you own?
+Have you ever broken a bone?
+Have you ever slept outside?
+What is your favorite dessert?
+What do you always buy at the grocery store?
+Have you ever been to South America?
+What do you do as excerise?
+Which do you like better, black socks or white socks?
+Have you ever burnt your hair?
+If you could have any kind of pet, what would you choose?
+What is your favorite season?
+If you could have a superpower, what would you choose?
+Have you ever been tanning?
+Do you like flying?
+What is your favorite comedy?
+Do you have any tattoos or piercings?
+What is your favorite TV show?
+Have you ever been water skiing?
+Do you have nice handwriting?
+If you could change genders for a day, would you?
+What is your favorite cereal?
+Have you ever seen a ghost?
+If you had to swap lives with someone famous, who would you choose?
+How many children do you want?
+Which do you like better, shower or bath?
+Which do you like better, chocolate or vanilla?
+Have you ever ridden a motorcycle?
+Do you like the beach?
+Have you ever ironed clothes?
+If you didn't need sleep, what would you do?
+Have you ever been to Asia?
+What was your major in school?
+What is you favorite snack?
+What is your favorite flavor of ice cream?
+What is your favorite dinner meal?
+What is your favorite eye color?
+Which do you like better, comedy or drama?
+Which do you like better, TV or movies?
+Have you ever gotten stitches?
+Are you religious?
+What is your favorite video game?
+Have you ever cut your own hair?
+which do you like better, calls or texts?
+Which do you like better, shop online or shop offline?
+Which do you like better, dogs or cats?
+Have you ever eaten food from the trash?
+Do you like to dance?
+What is the scarest animal you've seen in the wild?
+Have you ever dyed your hair?
+Do you like your job?
+What is your favorite vacation?
+Which do you like better, chocolate or vanilla?
+Have you ever dyed your hair?
+Have you ever been surfing?
+How many books did you read last year?
+Have you ever been stopped by the police?
+Which do you like better, Star Wars or Star Trek?
+Have you ever shoplifted?
+Have you ever been on TV?
+Have you ever dined and dashed?
+Where is the furthest you've traveled?
+Do you have nice handwriting?
+If you could play any instrument, what would you choose?
+Which do you like better, long hair or short hair?
+Have you ever slept outside?
+What is your favorite TV show?
+Have you ever been hunting?
+Have you ever cut your own hair?
+Have you ever been scuba diving?
+What is your favorite clothing brand?
+Which do you like better, dogs or cats?
+What is your favorite school subject?
+Which do you like better, hot or cold?
+Where is the furthest you've driven?
+If you could time travel, what would you do?
+What is your first memory?
+Which do you like better, cake or pie?
+If you had to change your name, what would you choose?
+What is your favorite breakfast meal?
+If you had to swap lives with a character, who would you choose?
+What is your favorite cheese?
+Do you have any nicknames?
+Which do you like better, curtains or blinds?
+Do you like the beach?
+Do you like flying?
+Have you ever fainted?
+Have you ever been a vegetarian?
+What is the strangest thing you've eaten?
+Have you ever ironed clothes?
+Where did you get your name?
+Do you like your job?
+How many pairs of shoes do you own?
+Which do you like better, Microsoft or Apple?
+Do you have any allergies?
+What is the worst movie you've seen?
+Which do you like better, straight or curly?
+Which do you like better, black socks or white socks?
+What is your favorite month?
+Are you friends with more men or women?
+If you won the lottery, what would you buy?
+Where have you traveled?
+Which do you like better, shower or bath?
+What was your worst injury?
+What is your favorite memory?
+Have you ever changed a diaper?
+Have you ever been to a football game?
+What is your favorite sandwich?
+What are your favorite songs?
+If you could change genders for a day, would you?
+What is your favorite lunch meal?
+Where are you originally from?
+Have you ever been done karaoke?
+Which do you like better, TV or movies?
+Do you have family in another country?
+Which do you like better, sweet or salty?
+What is your favorite candy?
+Which do you like better, mountains or oceans?
+What is your favorite dinner meal?
+What are your favorite ice cream toppings?
+Which do you like better, cars or trucks?
+Have you ever been to a planetarium?
+Do you have pets?
+Which do you like better, comedy or drama?
+What is your favorite sport?
+Have you ever had to run for your life?
+What is your favorite food to cook?
+Do you like ice in your drinks?
+Have you ever mowed a lawn?
+Have you ever had bad sun burn?
+Have you ever gotten stitches?
+Do you keep your things organized?
+Where do you see yourself in ten years?
+Have you ever been slapped?
+What was your major in school?
+Which do you like better, Coke or Pepsi?
+What is your favorite season?
+Have you ever hitchhiked?
+Which do you like better, city or country?
+Do you have any pet peeves?
+What is your favorite video game?
+If you didn't need sleep, what would you do?
+Have you ever been horseback riding?
+What is your favorite fast food meal?
+What are your favorite hot dog toppings?
+Have you ever been to a farm?
+What is the longest you've been awake?
+Have you ever cheated on a test?
+Who is your favorite character?
+Have you ever shot a gun?
+Which do you like better, pancakes or waffles?
+Have you ever been a vegetarian?
+Have you ever ridden a motorcycle?
+Have you ever cheated on a test?
+Have you ever been horseback riding?
+Which do you like better, city or country?
+Do you have a temper?
+Have you ever had to run for your life?
+Have you ever been done karaoke?
+Have you ever cut someone else's hair?
+How many books did you read last year?
+Have you ever slept outside?
+Which do you like better, pancakes or waffles?
+If you had to swap lives with someone famous, who would you choose?
+Do you have any tattoos or piercings?
+Which do you like better, dogs or cats?
+Which do you like better, cardio or weightlifting?
+What is your favorite cereal?
+Which do you like better, black socks or white socks?
+Do you like ice in your drinks?
+Have you ever been in a talent show?
+What is your first memory?
+Have you ever gotten stitches?
+Have you ever been electrocuted?
+Have you ever been scuba diving?
+What are your favorite ice cream toppings?
+Which do you like better, Star Wars or Star Trek?
+Who is your favorite character?
+If you could meet anyone, who would you choose?
+What is your favorite sandwich?
+Have you ever shot a gun?
+Have you ever dined and dashed?
+Which do you like better, cake or pie?
+Have you ever been to a zoo?
+What is your favorite board game?
+Where do you see yourself in ten years?
+What was your major in school?
+Have you ever seen a ghost?
+Which do you like better, hot or cold?
+If you could have a superpower, what would you choose?
+What is your favorite comedy?
+What is your size shoe?
+Which do you like better, sweet or salty?
+Have you ever jumped out of a plane?
+Have you ever been arrested?
+How many children do you want?
+If you could play any instrument, what would you choose?
+What is your favorite drink?
+Have you ever been to South America?
+which do you like better, being a passenger or driver?
+Which do you like better, ninjas or pirates?
+Do you have any nicknames?
+What are your favorite books?
+What type of music are you into?
+What is your favorite color?
+If you could learn any language, what would you choose?
+Do you like to dance?
+If you could time travel, what would you do?
+Where is you favorite place to eat?
+If you had to live somewhere else, what would you choose?
+Have you ever been to a football game?
+Have you ever been to Comic-con?
+Where is the furthest you've traveled?
+What is the longest you've been awake?
+What is your favorite holiday?
+What is your favorite fruit?
+What is your favorite fast food meal?
+Have you ever been in a play?
+What are your favorite albums?
+Do you like flying?
+Which do you like better, straight or curly?
+Which do you like better, beer or wine?
+Which do you like better, rain or snow?
+Do you have family in another country?
+Do you like your job?
+Have you ever fainted?
+Which do you like better, chocolate or vanilla?
+What was your worst injury?
+Which do you like better, Google or Apple?
+Can you play an instrument?
+Who do you most resemble?
+Have you ever changed a diaper?
+What is your favorite lunch meal?
+Have you ever sewed?
+Are you religious?
+Where have you traveled?
+Which do you like better, long hair or short hair?
+If you had to swap lives with a character, who would you choose?
+Do you keep your things organized?
+What do you always buy at the grocery store?
+What are your favorite movies?
+Have you ever had bad sun burn?
+What do you fear?
+Have you ever been in a fight?
+What is your favorite candy?
+What is your favorite clothing brand?
+What is your favorite month?
+What do you do to make money?
+If you didn't need sleep, what would you do?
+Do you have any siblings?
+Which do you like better, pens or pencils?

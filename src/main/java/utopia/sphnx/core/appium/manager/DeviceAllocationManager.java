@@ -1,0 +1,116 @@
+package utopia.sphnx.core.appium.manager;
+
+import utopia.sphnx.core.appium.android.AndroidDeviceConfiguration;
+import utopia.sphnx.core.appium.ios.IOSDeviceConfiguration;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.concurrent.ConcurrentHashMap;
+
+/**
+ *  DeviceAllocationManager - Handles device initialisation, allocation and de-allocattion
+ */
+public class DeviceAllocationManager {
+    private ArrayList<String> devices = new ArrayList<String>();
+    private ConcurrentHashMap<String, Boolean> deviceMapping =
+            new ConcurrentHashMap<String, Boolean>();
+    private static utopia.sphnx.core.appium.manager.DeviceAllocationManager instance;
+    private static AndroidDeviceConfiguration androidDevice;
+    private static IOSDeviceConfiguration iosDevice;
+
+    private DeviceAllocationManager() {
+        try {
+            iosDevice = new IOSDeviceConfiguration();
+            androidDevice = new AndroidDeviceConfiguration();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        initializeDevices();
+    }
+
+    public static utopia.sphnx.core.appium.manager.DeviceAllocationManager getInstance() {
+        if (instance == null) {
+            instance = new utopia.sphnx.core.appium.manager.DeviceAllocationManager();
+        }
+        return instance;
+    }
+
+    private void initializeDevices() {
+        if (System.getenv("Platform") == null) {
+            throw new IllegalArgumentException("Please execute with Platform environment"
+                    + ":: Platform=android/ios/both mvn clean -Dtest=Runner test");
+        }
+        try {
+            if (System.getProperty("os.name").toLowerCase().contains("mac")
+                    && System.getenv("Platform").equalsIgnoreCase("iOS")
+                    || System.getenv("Platform").equalsIgnoreCase("Both")) {
+                if (iosDevice.getIOSUDID() != null) {
+                    System.out.println("Adding iOS devices");
+                    if (IOSDeviceConfiguration.validDeviceIds.size() > 0) {
+                        devices.addAll(IOSDeviceConfiguration.validDeviceIds);
+                    } else {
+                        devices.addAll(IOSDeviceConfiguration.deviceUDIDiOS);
+                    }
+                }
+                if (System.getenv("Platform").equalsIgnoreCase("android")
+                        || System.getenv("Platform").equalsIgnoreCase("Both")) {
+                    getAndroidDeviceSerial();
+                }
+            } else {
+                getAndroidDeviceSerial();
+            }
+            for (String device : devices) {
+                deviceMapping.put(device, true);
+            }
+            System.out.println(deviceMapping);
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("Failed to initialize framework");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void getAndroidDeviceSerial() throws Exception {
+        if (androidDevice.getDeviceSerial() != null) {
+            System.out.println("Adding Android devices");
+            if (AndroidDeviceConfiguration.validDeviceIds.size() > 0) {
+                System.out.println("Adding Devices from DeviceList Provided");
+                devices.addAll(AndroidDeviceConfiguration.validDeviceIds);
+            } else {
+                devices.addAll(AndroidDeviceConfiguration.deviceSerial);
+            }
+        }
+    }
+
+    public ArrayList<String> getDevices() {
+        return devices;
+    }
+
+    public synchronized String getNextAvailableDeviceId() {
+        ConcurrentHashMap.KeySetView<String, Boolean> devices = deviceMapping.keySet();
+        int i = 0;
+        for (String device : devices) {
+            Thread t = Thread.currentThread();
+            t.setName("Thread_" + i);
+            i++;
+            if (deviceMapping.get(device)) {
+                deviceMapping.put(device, false);
+                return device;
+            }
+        }
+        return "";
+    }
+
+    public void freeDevice() {
+        deviceMapping.put(DeviceManager.getDeviceUDID(), true);
+    }
+
+    public void allocateDevice(String device, String deviceUDID) {
+        if (device.isEmpty()) {
+            DeviceManager.setDeviceUDID(deviceUDID);
+        } else {
+            DeviceManager.setDeviceUDID(device);
+        }
+    }
+}

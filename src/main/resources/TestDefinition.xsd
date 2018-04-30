@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TestStep">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Parameters"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="application" use="optional"/>
+      <xs:attribute type="xs:string" name="area" use="optional"/>
+      <xs:attribute type="xs:string" name="functionName" use="optional"/>
+      <xs:attribute type="xs:string" name="onFail" use="optional"/>
+      <xs:attribute type="xs:string" name="iteration" use="optional"/>
+      <xs:attribute type="xs:string" name="dataRow" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Parameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="parameter" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Execution">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="TestRun"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestCase">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="TestStep"/>
+        <xs:element ref="LOOP"/>
+        <xs:element ref="END_LOOP"/>
+      </xs:choice>
+      <xs:attribute type="xs:string" name="TestCase" use="optional"/>
+      <xs:attribute type="xs:string" name="run" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestScenario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Properties"/>
+        <xs:element ref="TestCase" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="TestScenario" use="optional"/>
+      <xs:attribute type="xs:string" name="Run" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestRun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="TestScenario" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="TestRun"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="parameter">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:string" name="name" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LOOP">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:string" name="dataFile" use="optional"/>
+          <xs:attribute type="xs:string" name="startRange" use="optional"/>
+          <xs:attribute type="xs:string" name="iterations" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="END_LOOP">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="Parameters" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="application" use="optional"/>
+      <xs:attribute type="xs:string" name="area" use="optional"/>
+      <xs:attribute type="xs:string" name="functionName" use="optional"/>
+      <xs:attribute type="xs:string" name="onFail" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="property">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:string" name="name" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Properties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="property" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Execution>
+    <TestRun TestRun="Scenarios">
+        <TestScenario TestScenario="KyleScenarioFile.xlsx::Loop" Run="Y">
+            <Properties>
+                <property name="MODE">Sequential</property>
+                <property name="DEVICE">TestLab_02</property>
+                <property name="BROWSER">Chrome</property>
+                <property name="Param1">Set01 - Parm1</property>
+                <property name="Param2">Set01 - Parm2</property>
+                <property name="Param3">Set01 - Parm3</property>
+                <property name="Param4">Set01 - Parm4</property>
+            </Properties>
+            <TestCase TestCase="HL_Login" run="Y">
+                <TestStep application="CORE" area="UI" functionName="Login" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">&lt;QA2_Username&gt;</parameter>
+                        <parameter name="Param3">&lt;QA2_Password&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+            </TestCase>
+            <TestCase TestCase="LoopRanged" run="Y">
+                <LOOP dataFile="StreamlinxData.xlsx" startRange="2,3,5" iterations="3"/>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="1" dataRow="2" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">&lt;QA_Username&gt;</parameter>
+                        <parameter name="Param3">&lt;QA_Password&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="1" dataRow="2" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">&lt;QuoteNbr&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="1" dataRow="2" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="2" dataRow="3" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">&lt;QA2_Username&gt;</parameter>
+                        <parameter name="Param3">&lt;QA2_Password&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="2" dataRow="3" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">&lt;QuoteNbr&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="2" dataRow="3" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="3" dataRow="5" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">maxwell</parameter>
+                        <parameter name="Param3">ten9EightG0!</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="3" dataRow="5" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">&lt;QuoteNbr&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="3" dataRow="5" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <END_LOOP/>
+                <TestStep application="CORE" area="UI" functionName="Navigate" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA9_URL&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+            </TestCase>
+            <TestCase TestCase="LoopStartRow" run="Y">
+                <LOOP dataFile="StreamlinxData.xlsx::Data" startRange="2" iterations="5"/>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="1" dataRow="2" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">&lt;QA_Username&gt;</parameter>
+                        <parameter name="Param3">&lt;QA_Password&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="1" dataRow="2" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">29841</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="1" dataRow="2" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="2" dataRow="3" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">&lt;QA2_Username&gt;</parameter>
+                        <parameter name="Param3">&lt;QA2_Password&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="2" dataRow="3" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">29841</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="2" dataRow="3" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="3" dataRow="4" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">alittle</parameter>
+                        <parameter name="Param3">Weather4Cast4Geeks#@!</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="3" dataRow="4" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">29841</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="3" dataRow="4" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="4" dataRow="5" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">maxwell</parameter>
+                        <parameter name="Param3">ten9EightG0!</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="4" dataRow="5" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">29841</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="4" dataRow="5" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="5" dataRow="6" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">qa25.streamlinx.com</parameter>
+                        <parameter name="Param2">&lt;QA_Username&gt;</parameter>
+                        <parameter name="Param3">badpassword</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="5" dataRow="6" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">29841</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="5" dataRow="6" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <END_LOOP/>
+                <TestStep application="CORE" area="UI" functionName="Navigate" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA9_URL&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+            </TestCase>
+            <TestCase TestCase="NoLoop" run="Y">
+                <TestStep application="CORE" area="UI" functionName="Navigate" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA9_URL&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">Login.TestButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">Login.Username</parameter>
+                        <parameter name="Param2">&lt;QA_Username&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">Login.Password</parameter>
+                        <parameter name="Param2">&lt;QA_Password&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">Login.LoginButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">Login.LogOff</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">29841</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+            </TestCase>
+        </TestScenario>
+        <TestScenario TestScenario="KyleScenarioFile.xlsx::Loop" Run="Y">
+            <Properties>
+                <property name="MODE">Sequential</property>
+                <property name="DEVICE">TestLab_02</property>
+                <property name="BROWSER">Chrome</property>
+                <property name="Param1">Set01 - Parm1</property>
+                <property name="Param2">Set01 - Parm2</property>
+                <property name="Param3">Set01 - Parm3</property>
+                <property name="Param4">Set01 - Parm4</property>
+            </Properties>
+            <TestCase TestCase="HL_Login" run="Y">
+                <TestStep application="CORE" area="UI" functionName="Login" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">&lt;QA2_Username&gt;</parameter>
+                        <parameter name="Param3">&lt;QA2_Password&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+            </TestCase>
+            <TestCase TestCase="LoopRanged" run="Y">
+                <LOOP dataFile="StreamlinxData.xlsx" startRange="2,3,5" iterations="3"/>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="1" dataRow="2" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">&lt;QA_Username&gt;</parameter>
+                        <parameter name="Param3">&lt;QA_Password&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="1" dataRow="2" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">&lt;QuoteNbr&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="1" dataRow="2" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="2" dataRow="3" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">&lt;QA2_Username&gt;</parameter>
+                        <parameter name="Param3">&lt;QA2_Password&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="2" dataRow="3" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">&lt;QuoteNbr&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="2" dataRow="3" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="3" dataRow="5" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">maxwell</parameter>
+                        <parameter name="Param3">ten9EightG0!</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="3" dataRow="5" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">&lt;QuoteNbr&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="3" dataRow="5" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <END_LOOP/>
+                <TestStep application="CORE" area="UI" functionName="Navigate" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA9_URL&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+            </TestCase>
+            <TestCase TestCase="LoopStartRow" run="Y">
+                <LOOP dataFile="StreamlinxData.xlsx::Data" startRange="2" iterations="5"/>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="1" dataRow="2" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">&lt;QA_Username&gt;</parameter>
+                        <parameter name="Param3">&lt;QA_Password&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="1" dataRow="2" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">29841</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="1" dataRow="2" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="2" dataRow="3" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">&lt;QA2_Username&gt;</parameter>
+                        <parameter name="Param3">&lt;QA2_Password&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="2" dataRow="3" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">29841</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="2" dataRow="3" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="3" dataRow="4" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">alittle</parameter>
+                        <parameter name="Param3">Weather4Cast4Geeks#@!</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="3" dataRow="4" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">29841</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="3" dataRow="4" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="4" dataRow="5" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA25_URL&gt;</parameter>
+                        <parameter name="Param2">maxwell</parameter>
+                        <parameter name="Param3">ten9EightG0!</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="4" dataRow="5" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">29841</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="4" dataRow="5" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Login" iteration="5" dataRow="6" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">qa25.streamlinx.com</parameter>
+                        <parameter name="Param2">&lt;QA_Username&gt;</parameter>
+                        <parameter name="Param3">badpassword</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" iteration="5" dataRow="6" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">29841</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" iteration="5" dataRow="6" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <END_LOOP/>
+                <TestStep application="CORE" area="UI" functionName="Navigate" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA9_URL&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+            </TestCase>
+            <TestCase TestCase="NoLoop" run="Y">
+                <TestStep application="CORE" area="UI" functionName="Navigate" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">&lt;QA9_URL&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">Login.TestButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">Login.Username</parameter>
+                        <parameter name="Param2">&lt;QA_Username&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">Login.Password</parameter>
+                        <parameter name="Param2">&lt;QA_Password&gt;</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">Login.LoginButton</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" onFail="Continue">
+                    <Parameters>
+                        <parameter name="Param1">Login.LogOff</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="EnterText" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.SearchBox</parameter>
+                        <parameter name="Param2">29841</parameter>
+                    </Parameters>
+                </TestStep>
+                <TestStep application="CORE" area="UI" functionName="Click" onFail="EndTest">
+                    <Parameters>
+                        <parameter name="Param1">Menu.GoButton</parameter>
+                    </Parameters>
+                </TestStep>
+            </TestCase>
+        </TestScenario>
+    </TestRun>
+</Execution>

@@ -1,0 +1,16 @@
+<properties>
+	<property>
+		<key>url</key>
+		<value>http://www.google.com</value>
+	</property>
+
+	<property>
+		<key>username</key>
+		<value>hemant</value>
+	</property>
+
+	<property>
+		<key>password</key>
+		<value>12345</value>
+	</property>
+</properties>

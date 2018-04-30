@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" verbose="2" name="TestNG Forum" parallel="methods">
+
+    <listeners>
+        <listener class-name="com.codeborne.selenide.testng.ExtentTestNgListener"/>
+    </listeners>
+
+    <test name="Test 1">
+        <classes>
+            <class name="com.autmatika.tests.TheInternetTest"/>
+            <class name="com.autmatika.tests.withPages.GoogleTest"/>
+        </classes>
+    </test> <!-- TestNG Test -->
+</suite> <!-- TestNG Forum -->
