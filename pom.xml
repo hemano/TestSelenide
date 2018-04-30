@@ -397,9 +397,13 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.21.0</version>
                 <configuration>
+                    <systemPropertyVariables>
+                        <selenide.browser>chrome</selenide.browser>
+                    </systemPropertyVariables>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+
                 </configuration>
                 <!--<configuration>-->
                 <!--<skipTests>true</skipTests>-->
